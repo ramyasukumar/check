@@ -1,9 +1,9 @@
-package org.api.ai.webhook.helloworld;
+package hello;
 
 public class WebhookResponse {
-
     private final String speech;
     private final String displayText;
+
     private final String source = "java-webhook";
 
     public WebhookResponse(String speech, String displayText) {
