@@ -15,6 +15,6 @@ public class HelloWorldController {
 
         System.out.println(obj);
 
-        return new WebhookResponse("Hello! ");
+        return new WebhookResponse("Hello! "+ obj, "Text " + obj);
     }
 }
