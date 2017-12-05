@@ -6,7 +6,7 @@ public class WebhookRequest {
 
     private String resolvedQuery;
     private Map<String, String> parameters;
-    private Metadata metadata;
+    //private Metadata metadata;
 
     public String getResolvedQuery() {
         return resolvedQuery;
@@ -23,12 +23,12 @@ public class WebhookRequest {
     public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
-
+/*
     public Metadata getMetadata() {
         return metadata;
     }
 
     public void setMetadata(Metadata metadata) {
         this.metadata = metadata;
-    }
+    }*/
 }
