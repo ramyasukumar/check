@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloWorldController {
 
     @RequestMapping(method = RequestMethod.POST)
-public @ResponseBody WebhookResponse webhook(@RequestBody WebhookRequest webhookRequest){
+public @ResponseBody WebhookResponse webhook(@RequestBody AIGenericRequest request){
 
+    WebhookRequest webhookRequest =  request.getResult();
         String percentage =webhookRequest.getResolvedQuery();
 
         int value = Integer.parseInt(percentage.replaceAll("[^0-9]", ""));
